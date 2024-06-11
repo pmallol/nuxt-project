@@ -2,6 +2,11 @@
 import { resolve } from "path";
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  runtimeConfig: {
+    spoonacular: {
+      apiKey: '',
+    },
+  },
   alias: {
     '@': resolve(__dirname, '/'),
   },
