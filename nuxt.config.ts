@@ -20,6 +20,14 @@ export default defineNuxtConfig({
     }
   },
 
+  image: {
+    providers: {
+      spoonacular: {
+        provider: '~/providers/spoonacular',
+      },
+    },
+  },
+
   alias: {
     '@': resolve(__dirname, '/'),
   },
