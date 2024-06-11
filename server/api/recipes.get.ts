@@ -11,6 +11,6 @@ export default defineCachedEventHandler(async (event) => {
   base: 'recipes',
   getKey: () => 'recipes',
   shouldByPassCache: () => false,
-  maxAge: 1000 * 60 * 60 * 24 // 1 day
+  maxAge: 1000 * 60 * 60 * 24, // 1 day
   staleMaxAge: 1000 * 60 * 60 * 24 * 7 // 1 week
 });
