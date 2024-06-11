@@ -1,5 +1,5 @@
 <template>
-  <UContainer>
+  <UContainer v-if="recipe">
     <h1 class="mt-4 font-bold text-xl pt-12 mb-4">{{ recipe.title }}</h1>
     <UBadge
       v-for="label in recipe.dishTypes"
