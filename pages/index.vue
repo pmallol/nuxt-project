@@ -60,8 +60,9 @@
 </template>
 
 <script setup>
-const { data: recipes } = await useFetch('/api/recipes');
-const recipe = recipes.value[0];
+const { data: recipe } = await useFetch('/api/recipes', {
+  transform: data => data[Math.random() * data.length | 0],
+});
 
 const columns = [
   { key: 'name', label: 'Name' },
